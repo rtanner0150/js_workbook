@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Workbook 2.8</title>
+</head>
+<body>
+    <script>
+        let a = 1, b = 1;
+        let c = ++a;
+        let d = b++;
+        //final: a = 2, b = 2, c = 2, d = 1
+        alert('a: ' + a + ', b: ' + b + ', c: ' + c + ', d: ' + d);
+
+        let a2 = 2;
+        let x = 1 + (a2 *= 2);
+        //final: a2 = 4, x = 5
+        alert('a2: ' + a2 + ', x: ' + x);
+
+        "" + 1 + 0;    //'10'
+        "" - 1 + 0;    //-1
+        true + false;  //true? 1
+        6 / "3";       //2
+        "2" * "3";     //6
+        4 + 5 + "px";  //45px? 9px
+        "$" + 4 + 5;   //$45
+        "4" - 2;       //2
+        "4px" - 2;     //'2px'? NaN
+        7 / 0;         //undefined? infinity
+        "  -9  " + 5;  //' -9 5'
+        "  -9  " - 5;  //NaN? -14
+        null + 1;      //NaN? 1
+        undefined + 1; //NaN
+        " \t \n" - 2;  //NaN? -2
+
+        let prompt1 = prompt('First number?', 1);
+        let prompt2 = prompt('Second number?', 2);
+        alert(+prompt1 + +prompt2);
+</script>
+</body>
+</html>
