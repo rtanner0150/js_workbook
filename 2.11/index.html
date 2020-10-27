@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Workbook 2.11</title>
+</head>
+<body>
+    <script>
+        // alert(null || 2 || undefined); //results in 2
+        // alert(alert(1) || 2 || alert(3)); //results in alert(1) then 2
+        // alert(1 && null && 2); //results in null
+        // alert(alert(1) && alert(2)); //results in undefined
+        // alert(null || 2 && 3 || 4); //results in 3
+        var age;
+        if (age >= 14 && age <= 90){
+            //if age between 14 and 90 inclusive
+        }
+
+        if (!(age >= 14 && age <= 90)){
+            //if age outside 14-90
+        }
+
+        if (age < 14 || age > 90){
+            //if age outside 14-90
+        }
+
+        // if (-1 || 0) alert( 'first' ); //executes
+        // if (-1 && 0) alert( 'second' ); //doesn't execute
+        // if (null || -1 && 1) alert( 'third' ); //executes
+
+        let login = prompt('Login', '');
+        let password;
+        if (login == 'Admin'){
+            password = prompt('Password', '');
+            if (password == 'TheMaster'){
+                alert('Welcome!');
+            } else if (password == '' || password == null){
+                alert('Canceled')
+            } else {
+                alert('Wrong Password');
+            }
+        } else if (login == '' || login == null){
+            alert('Canceled');
+        } else {
+            alert('I don\'t know you');
+        }
+    </script>
+</body>
+</html>
