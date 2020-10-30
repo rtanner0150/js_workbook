@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Workbook 2.15</title>
+</head>
+<body>
+    <script>
+        //rewrite using ? or ||: original
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                return confirm('Did parents allow you?');
+            }
+        }
+        //rewrite 1: ?
+        function checkAge2(age){
+            return age > 18 ? true : confirm('Did parents allow you?');
+        }
+        //rewrite 2: ||
+        function checkAge3(age){
+            return age > 18 || confirm('Did parents allow you?');
+        }
+
+        //Write a function min(a,b) which returns the least of two numbers a and b
+        function min(a, b){
+            return a > b ? b : a;
+        }
+
+        //Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+        function pow(x,n){
+            return x ** n;
+        }
+        let num = prompt('First number');
+        let exp = prompt('to the power of?');
+        if (exp < 1){
+            alert('Must be positive exponent')
+        } else {
+            alert(pow(num, exp));
+        }
+    </script>
+</body>
+</html>

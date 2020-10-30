@@ -1,0 +1,22 @@
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <script>
+      document.body.firstElementChild; //div
+      document.body.firstElementChild.nextElementSibling; //ul
+      document.body.firstElementChild.nextElementSibling.lastElementChild; //li with Pete
+
+      //diagonal table cells coloring exercise
+        let table = document.body.firstElementChild;
+        let rows = Array.from(table.rows);
+        for (let i = 0; i < rows.length; i++){
+        let cells = Array.from(rows[i].cells);
+        cells[i].style.backgroundColor = 'red';
+        }
+  </script>
+</body>
+</html>
