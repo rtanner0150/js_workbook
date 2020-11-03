@@ -5,7 +5,9 @@
 </head>
 <body>
     <script>
+        // constructor for Calculator
         function Calculator() {
+            //read: 
             this.read = function(){
                 this.firstValue = Number(prompt('Enter first value',''));
                 this.secondValue = Number(prompt('Enter second value',''));
@@ -26,7 +28,7 @@
         function Accumulator(startingValue){
             this.value = startingValue;
             this.read = function(){
-                this.value += Number(prompt('Add a value',''));
+                this.value += Number(prompt('Add a value',0));
             }
         }
 
